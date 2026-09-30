@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "chatze-nepal-xyz",
+  "main": "worker.js",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "chatze_db","database_id": "afe91d47-b844-49b8-9e45-27f224e32637"
+    }
+  ],
+
+  "vars": {
+    "NODE_ENV": "production",
+    "BETTER_AUTH_SECRET": "chatze-cloudflare-edge-secret-key-prod-np",
+    "PUBLIC_APP_URL": "https://chatze-nepal.workers.dev"
+  },
+  "assets": {
+    "directory": ".next",
+    "binding": "ASSETS"
+  }
+}
